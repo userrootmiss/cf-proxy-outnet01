@@ -2,7 +2,7 @@ export default {
     async fetch(request, env) {
       let url = new URL(request.url);
       if (url.pathname.startsWith('/')) {
-        url.hostname="outline01-ligeance001.koyeb.app";
+        url.hostname="outnet01-ligeance001.koyeb.app";
         url.protocol="http";
         let new_request=new Request(url,request);
         return fetch(new_request);
